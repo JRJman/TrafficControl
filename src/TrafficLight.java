@@ -2,19 +2,22 @@ public class TrafficLight {
 
     private int id;
     private int numberOfLights;
-    private int defaultColor;
+    private int currentColor;
 
+    //    constructor zonder variabelen
     public TrafficLight() {
         id = 0;
         numberOfLights = 3;
-        defaultColor = 1;
+        currentColor = 1;
     }
 
+    //    constructor met variabelen
     public TrafficLight(int id, int numberOfLights) {
         this.id = id;
         this.numberOfLights = numberOfLights;
     }
 
+    //    vertelt welke kleur het is
     public String showColor(int light) {
 
         String result;
@@ -39,10 +42,12 @@ public class TrafficLight {
         return result;
     }
 
+    //    vertelt wat de id is
     public int showId() {
        return id;
     }
 
+    //    vertelt wat de kleur en de id is
     public void showColorAndId(int light) {
         String result;
         result = showColor(light);
@@ -54,8 +59,28 @@ public class TrafficLight {
         );
     }
 
+    //    vertelt of het een positief getal is
     public boolean isPositiveNumber(int number) {
         return number >= 0;
     }
 
+    //    vertelt wat de currentColor
+    public int getCurrentColor() {
+        return currentColor;
+    }
+
+    //    past de currentColor aan
+    public void setCurrentColor(int defaultColor) {
+        this.currentColor = defaultColor;
+    }
+
+    //    vertelt wat de numberOfLights is
+    public int getNumberOfLights() {
+        return numberOfLights;
+    }
+
+    //    past de numberOfLights aan
+    public void setNumberOfLights(int numberOfLights) {
+        this.numberOfLights = numberOfLights;
+    }
 }
