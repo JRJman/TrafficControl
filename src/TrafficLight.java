@@ -3,6 +3,7 @@ public class TrafficLight {
     private int id;
     private int numberOfLights;
     private int currentColor;
+    private String colorLight;
 
     //    constructor zonder variabelen
     public TrafficLight() {
@@ -82,5 +83,13 @@ public class TrafficLight {
     //    past de numberOfLights aan
     public void setNumberOfLights(int numberOfLights) {
         this.numberOfLights = numberOfLights;
+    }
+
+    public String getColorLight() {
+        return colorLight;
+    }
+
+    public void setColorLight(String colorLight) {
+        this.colorLight = colorLight;
     }
 }
